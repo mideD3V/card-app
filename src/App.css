@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#card-ctn {
+  margin: 10rem auto;
+  width: 45rem;
+  height: 25rem;
+  background-color: rgb(25, 32, 74);
+  border-radius: 18px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  position: relative;
+}
+.logo {
+  width: 100%;
+}
+.logo img {
+  width: 80%;
+  height: 60%;
+  margin: 0.5rem 2rem;
+  transition: ease 0.5s;
+}
+.logo img:hover {
+  transform: scale(1.2);
+}
+.logo ul {
+  width: 100%;
+}
+.logo ul li {
+  margin: 1rem 2rem;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.pageDiv {
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desc {
+  width: 100%;
+  color: #fff;
+  margin-left: 1px solid white;
+  padding: 2rem;
+  text-align: right;
+  background-color: rgb(23, 78, 126);
+  transform: rotate(35deg);
+  border-radius: 16px;
+  position: relative;
+  margin-left: 5rem;
+  left: 12%;
+}
+
+.name {
+  margin-top: 11rem;
+  margin-left: 1rem;
+  font-size: 2.3rem;
+  position: absolute;
+  transform: rotate(-35deg);
+}
+.title {
+  font-size: 1rem;
+  position: absolute;
+  transform: rotate(-35deg);
+  left: 35%;
+  top: 58%;
+}
+button {
+  background: none;
+  border: 2px solid rgb(245, 234, 251);
+  font-size: 1.15rem;
+  position: absolute;
+  transform: rotate(-35deg);
+  left: 32%;
+  top: 67%;
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+
+  border-radius: 5px;
+  color: #fff;
+}
+button:hover {
+  background-color: azure;
+  color: black;
+}
+.socials {
+  position: absolute;
+  left: 80%;
+  top: 90%;
+}
+.socials a {
+  text-decoration: none;
+  margin-left: 8px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.socials a:hover{
+  transform: scale(1.2);
+  
 }
