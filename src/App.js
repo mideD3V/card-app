@@ -1,10 +1,12 @@
 import Card from './Card'
 import './App.css';
+import Heading from './Header'
 
 function App() {
   return (
     <div className="App">
-    <Card/>
+      <Heading />
+      <Card />
     </div>
   );
 }

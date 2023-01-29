@@ -19,8 +19,10 @@ const Card = () => {
   return (
     <div id="card-ctn">
       <div className="logo">
-        <img src={Logo} alt="Logo" />
-        {/* <h3>LOCAL MAN COMPANY</h3> */}
+        <a href="www.google.com" target='_blank'>
+          
+          <img src={Logo} alt="Logo" />
+        </a>
 
         <ul className="services">
           <li>Logo Design</li>
@@ -29,7 +31,14 @@ const Card = () => {
         </ul>
       </div>
 
-      <span className="pageDiv"></span>
+      <span className="contact">
+        <p>
+          <b>Address: </b> 2, Amebo Street, Sapa Street, NG
+        </p>
+        <p>
+          <b>Email:</b> amebo_sapa@smail.com
+        </p>
+      </span>
 
       <div className="desc">
         <div className="name">David Jones</div>
@@ -40,9 +49,17 @@ const Card = () => {
       </div>
 
       <div className="socials">
-        <a href="https://www.twitter.com" target='_blank' rel="noreferrer"><AiFillFacebook /> </a>
-        <a href="https://www.twitter.com" target='_blank' rel="noreferrer"> <FiTwitter /> </a>
-        <a href="https://www.twitter.com" target='_blank' rel="noreferrer"> <AiFillLinkedin /> </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+          <AiFillFacebook />{" "}
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+          {" "}
+          <FiTwitter />{" "}
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+          {" "}
+          <AiFillLinkedin />{" "}
+        </a>
       </div>
     </div>
   );

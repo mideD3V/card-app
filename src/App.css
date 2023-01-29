@@ -1,5 +1,32 @@
+body{
+  background-color: rgb(177, 204, 226);
+
+}
+
+.Header{
+  background-color: rgb(29, 33, 41);
+  width: 100vw;
+  justify-content: center;
+}
+.Header marquee {
+  font-size: 5rem;
+  margin:2rem auto;
+  width: 100%;
+  font-weight: bolder;
+  text-align: center;
+  color: azure;
+}
+#info marquee{
+  font-size: 2rem;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
+  background-color: rgb(83, 109, 120);
+}
+
+
 #card-ctn {
-  margin: 10rem auto;
+  margin: 5rem auto;
   width: 45rem;
   height: 25rem;
   background-color: rgb(25, 32, 74);
@@ -10,32 +37,44 @@
 }
 .logo {
   width: 100%;
+  
 }
 .logo img {
-  width: 80%;
-  height: 60%;
+  width: 70%;
+  height: 50%;
   margin: 0.5rem 2rem;
   transition: ease 0.5s;
 }
 .logo img:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 .logo ul {
   width: 100%;
+  margin-top: -1rem;
 }
 .logo ul li {
   margin: 1rem 2rem;
   color: #fff;
 }
 
-.pageDiv {
+.contact {
+  position: absolute;
+  display: flex;
+    top: 90%;
+  left: 2%;
+}
+.contact p{
+margin-right: 2rem;
+  color: rgba(255, 255, 255, 0.81);
+  font-size: .8rem;
 }
 
 .desc {
   width: 100%;
+  height: 100%;
   color: #fff;
   margin-left: 1px solid white;
-  padding: 2rem;
+  padding: 1rem;
   text-align: right;
   background-color: rgb(23, 78, 126);
   transform: rotate(35deg);
@@ -46,8 +85,7 @@
 }
 
 .name {
-  margin-top: 11rem;
-  margin-left: 1rem;
+top: 50%;
   font-size: 2.3rem;
   position: absolute;
   transform: rotate(-35deg);
@@ -56,8 +94,8 @@
   font-size: 1rem;
   position: absolute;
   transform: rotate(-35deg);
-  left: 35%;
-  top: 58%;
+  left: 27%;
+  top: 55%;
 }
 button {
   background: none;
@@ -65,8 +103,8 @@ button {
   font-size: 1.15rem;
   position: absolute;
   transform: rotate(-35deg);
-  left: 32%;
-  top: 67%;
+  left: 28%;
+  top: 62%;
   width: 50%;
   font-weight: bold;
   cursor: pointer;
@@ -82,7 +120,7 @@ button:hover {
 .socials {
   position: absolute;
   left: 80%;
-  top: 90%;
+  top: 92%;
 }
 .socials a {
   text-decoration: none;
