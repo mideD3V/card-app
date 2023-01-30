@@ -9,12 +9,18 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 const Card = () => {
 
+  // useState hook for displaying phone number
+
   const [phone, setPhone] = useState("Display Phone");
   
-  const displayPhone = () => 
-  setPhone("+2348101234568")
+  const displayPhone = () => {
+    if (phone === 'Display Phone') {
+      setPhone("+234 810 123 4568")
+    } else {
+      setPhone ('Display Phone')
+    }
+  }
   
-
   
   return (
     <div id="card-ctn">
